@@ -1,2 +1,2 @@
-# Shopping Cart Webite 
+# Shopping Cart Website 
 ### Made using HTML, CSS, and Bootstrap
