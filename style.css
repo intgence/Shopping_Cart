@@ -1,0 +1,255 @@
+body {
+  font-size: 12px;
+}
+
+.navbar {
+  border-radius: 20px;
+}
+
+/* For the header  */
+.top-bar {
+  white-space: normal;
+}
+
+.navbar-brand {
+  font-size: 12px;
+}
+
+/* For the shopping cart icon in mobile view  */
+.cart-icon,
+.ham-icon {
+  height: 35px;
+  width: 35px;
+}
+
+/* For the cart count */
+.badge {
+  border-radius: 50%;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  font-size: 8px;
+  background: #fff;
+  color: #000;
+  vertical-align: top;
+  margin-left: -18px;
+  margin-top: -3px;
+  padding-top: 5px;
+}
+
+/* For the mobile menu  */
+.mob-menu {
+  font-size: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  z-index: 100 0;
+  width: 110%;
+  margin: 0 -15px 0 -15px;
+}
+
+/* For the search bar  */
+.form-control {
+  border-radius: 20px;
+  border-color: lightgray;
+  border-width: 1px;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+input[type="search"]::placeholder {
+  color: lightgray;
+  opacity: 1; /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+input[type="search"]:-ms-input-placeholder {
+  color: lightgray;
+}
+
+/* Microsoft Edge */
+input[type="search"]::-ms-input-placeholder {
+  color: lightgray;
+}
+
+a:active {
+  background-color: gray;
+}
+a:hover {
+  background-color: gray;
+}
+
+/* For the cards */
+.items {
+  width: 125%;
+  justify-content: left;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.item {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.list_of_items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-center,
+.mob-menu a {
+  text-align: center;
+}
+
+.border-t-1 {
+  border-top: 1px solid gray;
+}
+
+/* For the shopping bag  */
+.bag {
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 25%;
+  border: 1px solid gray;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.bag p {
+  text-align: center;
+}
+
+.bag-img {
+  width: 100px;
+}
+
+.bag button {
+  font-size: 14px;
+}
+
+.fa-1x {
+  font-size: 1.5rem;
+}
+
+.navbar-collapse a {
+  color: #fff;
+}
+.labels {
+  padding-top: 3;
+}
+
+.copyright {
+  color: #909090;
+}
+
+/* For small screens*/
+@media screen and (max-width: 618px) {
+  body,
+  html,
+  .container {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  .footer,
+  .labels {
+    flex-direction: column;
+  }
+  .footer div,
+  .labels div {
+    width: max-content;
+    text-align: center;
+  }
+  .bag {
+    display: none;
+  }
+  .search-box {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .nav-desk {
+    display: none;
+  }
+  .menu-desk {
+    display: none;
+  }
+
+  .logo {
+    height: 50%;
+    width: 50%;
+  }
+  .item {
+    width: 100%;
+  }
+  .items-wrapper-mob {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .items-mob {
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    flex-grow: 100%;
+  }
+}
+
+/* For smaller tablet screens  */
+@media screen and (min-width: 618px) and (max-width: 1199px) {
+  body,
+  html,
+  .container {
+    max-width: 100%;
+  }
+  .bag button {
+    font-size: 0.5px;
+    padding: 0.5rem;
+  }
+  .bag {
+    padding: 0.75rem;
+    font-size: 10px;
+  }
+}
+
+/* For normal tablet screens */
+@media screen and (max-width: 1400px) {
+  .bag button {
+    font-size: 11px;
+  }
+}
+
+/* For larger screens */
+@media screen and (min-width: 618px) {
+  .ham-mob {
+    display: none;
+  }
+  .cart-mob {
+    display: none;
+  }
+}
